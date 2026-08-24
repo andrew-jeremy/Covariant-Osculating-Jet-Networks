@@ -1,0 +1,29 @@
+[build-system]
+requires = ["setuptools>=69", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cojgn"
+version = "0.1.0"
+description = "Covariant Osculating Jet Geometric Networks with metric routing, signed curvature, cubic jets, and C2 gluing"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "torch>=2.2",
+  "numpy>=1.26"
+]
+
+[project.optional-dependencies]
+bench = ["scikit-learn>=1.4", "pandas>=2.0", "matplotlib>=3.8"]
+test = ["pytest>=8.0"]
+all = ["scikit-learn>=1.4", "pandas>=2.0", "matplotlib>=3.8", "pytest>=8.0"]
+
+[project.scripts]
+cojgn-train = "cojgn.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

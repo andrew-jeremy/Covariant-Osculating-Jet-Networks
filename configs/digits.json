@@ -1,0 +1,12 @@
+{
+  "dataset": "digits",
+  "hidden": 32,
+  "layers": 2,
+  "anchors": 4,
+  "curvature_rank": 4,
+  "cubic_rank": 2,
+  "metric_rank": 4,
+  "order": 3,
+  "glue_order": 2,
+  "geometry_weight": 0.001
+}
