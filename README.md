@@ -122,3 +122,5 @@ O(B K D Rg + B K O D (R2 + R3 + 1))
 ```
 
 rather than materializing dense per-output quadratic and cubic tensors with `D^2` and `D^3` storage/evaluation.
+
+Paper Manuscript for this work can be found here: [DOI: 10.13140/RG.2.2.19228.65922](https://doi.org/10.13140/RG.2.2.19228.65922)
